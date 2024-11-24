@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import QueryProvider from "./providers/query-provider";
+import SingleColumnLayout from "@/components/layout/SingleLayout";
 
 const pretandard = localFont({
   src: "./fonts/PretendardVariable.woff2",
@@ -29,7 +30,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <QueryProvider>{children}</QueryProvider>
+          <QueryProvider>
+            <SingleColumnLayout>{children}</SingleColumnLayout>
+          </QueryProvider>
         </ThemeProvider>
       </body>
     </html>

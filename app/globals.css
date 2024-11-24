@@ -78,3 +78,24 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.path-animation {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s ease-in-out infinite;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  50.1% {
+    stroke-dashoffset: -1000;
+  }
+  100% {
+    stroke-dashoffset: -1000;
+  }
+}
