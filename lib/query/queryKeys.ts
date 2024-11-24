@@ -16,7 +16,7 @@ export const queryKeys = {
 } as const;
 
 // 타입 추론을 위한 헬퍼 타입
-type QueryKeys = typeof queryKeys;
+// type QueryKeys = typeof queryKeys;
 
 // 사용 예시:
 /*
