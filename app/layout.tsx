@@ -22,7 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="kr" className={`${pretandard.variable} antialiased `}>
+    <html
+      lang="kr"
+      suppressHydrationWarning
+      className={`${pretandard.variable} antialiased `}
+    >
       <body>
         <ThemeProvider
           attribute="class"
