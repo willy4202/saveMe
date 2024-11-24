@@ -2,8 +2,14 @@
 
 - Next.js 14
 - Tailwind CSS
-- Radix UI
 - Shadcn UI
+- zustand
+- zod
+- react-query
+- axios
+- next-themes
+
+### Radix UI
 
 - button
 - alert-dialog
