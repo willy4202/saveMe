@@ -8,7 +8,6 @@ import Link from "next/link";
 
 const Header = () => {
   const path = usePathname();
-
   const isHome = path === "/";
 
   return (

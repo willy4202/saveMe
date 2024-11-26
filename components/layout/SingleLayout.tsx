@@ -1,6 +1,7 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import Header from "@/components/organisms/Header";
-// import Footer from "@/components/organisms/Footer";
 
 type Props = {
   className?: string;
@@ -19,7 +20,6 @@ export default function SingleColumnLayout({ className, children }: Props) {
       >
         {children}
       </main>
-      {/* <Footer /> */}
     </div>
   );
 }
