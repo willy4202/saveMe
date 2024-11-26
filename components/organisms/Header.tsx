@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import ThemeToggle from "../molecules/ThemeToggle";
 import { usePathname } from "next/navigation";
