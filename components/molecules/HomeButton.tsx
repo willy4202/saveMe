@@ -1,24 +1,22 @@
 "use client";
 
 import React from "react";
-import { useRouter } from "next/navigation";
-import { Button } from "../ui/button";
+
 import { ArrowRightIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const HomeButton = () => {
-  const router = useRouter();
-  const handleStartTracking = () => {
-    router.push("/form");
-  };
-
   return (
     <Button
+      asChild
       size="lg"
-      onClick={handleStartTracking}
-      className="mb-4 flex items-center gap-2 bg-primary text-white dark:bg-primary-dark dark:text-white"
+      className="mb-4 flex items-center  bg-primary text-white dark:bg-primary-dark dark:text-white"
     >
-      시작하기
-      <ArrowRightIcon className="w-4 h-4" />
+      <Link href="/form" className="flex items-center gap-2">
+        시작하기
+        <ArrowRightIcon className="w-4 h-4" />
+      </Link>
     </Button>
   );
 };
