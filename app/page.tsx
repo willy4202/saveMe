@@ -1,5 +1,8 @@
-import HomeButton from "@/components/molecules/HomeButton";
-import HomeLottie from "@/components/molecules/HomeLottie";
+// import HomeButton from "@/components/molecules/HomeButton";
+// import HomeLottie from "@/components/molecules/HomeLottie";
+
+import React from "react";
+
 export default function Home() {
   return (
     <section className="h-full flex flex-col ">
@@ -11,10 +14,10 @@ export default function Home() {
           오늘은 얼마나 벌었을까
         </h3>
       </div>
-      <HomeLottie />
+      {/* <HomeLottie />
       <div className="flex flex-col px-4">
         <HomeButton />
-      </div>
+      </div> */}
     </section>
   );
 }
