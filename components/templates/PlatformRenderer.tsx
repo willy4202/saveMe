@@ -1,5 +1,7 @@
-import useDeviceStore from "@/store/deviceStore";
+"use client";
+
 import { Fragment } from "react";
+import useDeviceStore from "@/lib/store/deviceStore";
 
 type Props = {
   mobile: React.ReactNode;
