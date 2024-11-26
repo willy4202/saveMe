@@ -4,7 +4,6 @@ import { MoonIcon, SunIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Toggle } from "../ui/toggle";
 import { Dynamic } from "../templates/dynamic";
-import { Button } from "../ui/button";
 
 const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();

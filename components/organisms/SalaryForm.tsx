@@ -159,10 +159,17 @@ const SalaryForm = () => {
             <FormItem className="flex items-center font-bold">
               <FormControl>
                 <Input
-                  placeholder="9"
-                  className="w-20 text-xl md:text-3xl"
-                  type="number"
                   {...field}
+                  type="number"
+                  placeholder="9"
+                  min={1}
+                  max={24}
+                  value={field.value ?? ""}
+                  className="w-20 text-xl md:text-3xl"
+                  onChange={(e) => {
+                    const value = e.target.value;
+                    field.onChange(value ? Number(value) : null);
+                  }}
                 />
               </FormControl>
               <FormLabel className="text-xl md:text-3xl">시부터</FormLabel>
@@ -180,6 +187,13 @@ const SalaryForm = () => {
                   className="w-20 text-xl md:text-3xl"
                   type="number"
                   {...field}
+                  min={1}
+                  max={24}
+                  value={field.value ?? ""}
+                  onChange={(e) => {
+                    const value = e.target.value;
+                    field.onChange(value ? Number(value) : null);
+                  }}
                 />
               </FormControl>
               <FormLabel className="text-xl md:text-3xl">
