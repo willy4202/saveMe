@@ -1,10 +1,12 @@
+"use client";
+
 import SalaryForm from "@/components/organisms/SalaryForm";
 
 import React from "react";
 
 const page = () => {
   return (
-    <section className="">
+    <section>
       <SalaryForm />
     </section>
   );
