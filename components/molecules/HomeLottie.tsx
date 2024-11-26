@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import dotWave from "@/app/assets/lottie/dot-wave-2.json";
+import dotWave from "@/public/assets/lottie/dot-wave-2.json";
 
 import Lottie from "react-lottie-player";
 

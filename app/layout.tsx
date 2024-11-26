@@ -1,12 +1,12 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import QueryProvider from "./providers/query-provider";
+import QueryProvider from "@/lib/providers/query-provider";
 import SingleColumnLayout from "@/components/layout/SingleLayout";
 
 const pretandard = localFont({
-  src: "./fonts/PretendardVariable.woff2",
+  src: "../public/fonts/PretendardVariable.woff2",
   variable: "--font-pretandard",
   weight: "100 900",
 });
