@@ -22,7 +22,7 @@ type DeviceState = {
   browserName: string;
 };
 
-const useDeviceStore = create<DeviceState>((set) => ({
+const useDeviceStore = create<DeviceState>(() => ({
   isMobile: checkIsMobile(),
   browserName: getBrowserName(),
 }));
